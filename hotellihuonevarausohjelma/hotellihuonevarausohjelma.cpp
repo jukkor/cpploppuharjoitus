@@ -167,7 +167,7 @@ void finalizeOrderScreen(
     case -1:
         break;
     case 0:
-        for (int i = 0; int < roomList.size(); i++) {
+        for (int i = 0; i < roomList.size(); i++) {
             roomList.at(i).checkout();
         }
         reservedRoomsList.clear();
