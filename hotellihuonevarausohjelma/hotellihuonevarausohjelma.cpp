@@ -120,6 +120,7 @@ void reserveRoomsScreen(
 
     switch (choice) {
     case -1:
+        mainMenu(roomList, reservedRoomsList, reservations);
         break;
     case 1:
         reserveRoom(roomList, reservedRoomsList, RoomType::Single);
@@ -186,6 +187,7 @@ void finalizeOrderScreen(
         std::cout << "Kiitos varauksestasi!" << std::endl;
         std::cin.clear();
         std::cin.ignore();
+        reserveRoomsScreen(roomList, reservedRoomsList, reservations);
         break;
     }
 }
@@ -334,6 +336,7 @@ void browseReservationsScreen(
 
     switch (choice) {
         case -1:
+            mainMenu(roomList, reservedRoomsList, reservations);
             break;
         case 0:
             searchByReservationNumber(reservations);
