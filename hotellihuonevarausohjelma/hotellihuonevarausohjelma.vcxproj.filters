@@ -27,6 +27,18 @@
     <ClCompile Include="Reservation.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="screens.h">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="screens.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="queries.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="commands.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="HotelRoom.h">
@@ -36,6 +48,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Reservation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="commands.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="queries.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

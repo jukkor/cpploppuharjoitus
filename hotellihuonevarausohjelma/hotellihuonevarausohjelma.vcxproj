@@ -127,13 +127,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="commands.cpp" />
     <ClCompile Include="hotellihuonevarausohjelma.cpp" />
     <ClCompile Include="HotelRoom.cpp" />
+    <ClCompile Include="queries.cpp" />
     <ClCompile Include="Reservation.cpp" />
     <ClCompile Include="RoomType.cpp" />
+    <ClCompile Include="screens.cpp" />
+    <ClCompile Include="screens.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="commands.h" />
     <ClInclude Include="HotelRoom.h" />
+    <ClInclude Include="queries.h" />
     <ClInclude Include="Reservation.h" />
     <ClInclude Include="RoomType.h" />
   </ItemGroup>
