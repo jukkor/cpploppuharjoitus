@@ -253,6 +253,11 @@ void printReservedRooms(std::vector<HotelRoom>& reservedRoomsList) {
 void removeRoomReservation(std::vector<HotelRoom>& roomList, std::vector<HotelRoom>& reservedRoomsList, RoomType roomType) {
     bool roomTypeFound = false;
 
+    std::cout << "Remove, Reserved Room List" << std::endl;
+    for (HotelRoom r : reservedRoomsList) {
+        r.printRoomInfo();
+    }
+
     for (int i = 0; i < reservedRoomsList.size(); i++) {
         if (reservedRoomsList.at(i).getRoomType() == roomType) {
             int roomNumber = reservedRoomsList.at(i).getRoomNumber();
@@ -280,6 +285,16 @@ void reserveRoom(
     RoomType roomType
 ) {
     bool roomTypeAvailable = true;
+
+    std::cout << "Add, Room List" << std::endl;
+    for (HotelRoom r : roomList) {
+        r.printRoomInfo();
+    }
+
+    std::cout << "Add, reserved Room List" << std::endl;
+    for (HotelRoom r : reservedRoomsList) {
+        r.printRoomInfo();
+    }
 
     if (reservedRoomsList.size() >= (roomList.size() / 2)-1) {
         roomTypeAvailable = checkIfRoomTypeAvailable(roomList, roomType);
